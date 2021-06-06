@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title >My webpage </title>
+<style>
+     body {
+          background-image: url("https://images.unsplash.com/photo-1622941046305-6f0cdb58fb6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80");
+          background-size: cover;
+     }
+     .hd {
+          font-size: 35px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 600;
+          padding: 20px 60px;
+     }
+     ul {
+          float: right;
+          margin-top: -65px;
+     }
+     li {
+          display: inline-block;
+          padding: 15px 25px;
+     }
+     .active {
+          text-decoration: none;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: black;
+          font-size: 20px;
+          background-color:gold;
+          padding: 8px 20px;
+          border-radius: 5px;
+     }
+     .a1 {
+          color: white;
+          font-size: 15px;
+          text-decoration: none;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+     .a1:hover {
+          border-bottom: 1px solid white;
+     }
+     .info {
+          margin-left: 450px;
+          margin-top: 150px;
+     }
+     .info h1 {
+          font-family: Arial, Helvetica, sans-serif;
+          color: white;
+          font-size: 45px;
+     }
+     .info h2 {
+          font-family: Arial, Helvetica, sans-serif;
+          color: white;
+          font-weight: 500;
+     }
+     .info button {
+          padding: 10px 25px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 15px;
+          background-color:pink;
+          border-radius: 5px;
+          border: 1px solid pink
+     }
+     .info button:hover {
+          box-shadow: 0 10px 20px 0 rgba(0,0,0,0.30), 0 10px 20px 0 rgba(0,0,0,0.30);
+          transition: 0.7s;
+     }
+     .ac {
+          height: 400px;
+          width: 400px;
+          background-color:#f2f2f2;
+          margin-top: 120px;
+          margin-left: 500px;
+          box-shadow: 0 20px 50px 0 rgba(0,0,0,0.30), 0 20px 50px 0 rgba(0,0,0,0.30);
+          border-radius: 6px;
+          display: none;
+     }
+     .ac h1 {
+          color: black;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 500;
+          font-size: 23px;
+          text-align: center;
+          padding: 20px 0;
+     }
+</style>
+</head>
+<body>
+     <div class="hd"> Coder Stop </div>
+     <ul>
+          <li> <a href="#" class="active"> Home </a></li>
+          <li> <a href="#" class="a1"> About Us </a></li>
+          <li> <a href="#" class="a1"> Services </a></li>
+          <li> <a href="#" class="a1"> Contact Us </a></li>
+     </ul>
+     <div class="info" id="info">
+          <h1> Learn to code in an Easy Way!</h1>
+          <h2> Get started by creating an account.</h2>
+          <button id="btn"> Create </button>
+     </div>
+     <div class="ac" id="ac">
+          <h1> Sign Up </h1>
+     </div>
+<script type="text/javascript">
+     var info = document.getElementById('info');
+     var ac = document.getElementById('ac');
+     var btn  = document.getElementById('btn');
+     btn.onclick=function(){
+          info.style.display='none';
+          ac.style.display='block';
+     }
+</script>
+</body>
+</html>
